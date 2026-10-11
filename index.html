@@ -36,7 +36,7 @@
               800: '#38342c',
               900: '#211e19',
             },
-            accent: '#0f766e', // Deep emerald teal
+            accent: '#0f766e',
           }
         }
       }
@@ -105,19 +105,19 @@
 
 <body class="bg-paper text-stone-900 font-sans antialiased min-h-screen relative">
 
-  <!-- Top Toast Notification for Copying Email -->
+  <!-- Toast Notification -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-stone-900 text-stone-50 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-mono">
     <i data-feather="check" class="w-4 h-4 text-emerald-400"></i>
     <span>Email copied to clipboard!</span>
   </div>
 
-  <!-- Top Minimal Header -->
+  <!-- Header -->
   <header class="max-w-4xl mx-auto px-6 py-10 flex items-center justify-between border-b border-stone-200/80">
     <div>
       <a href="#" class="font-serif text-2xl font-medium tracking-tight text-stone-900 hover:text-stone-600 transition">
         Tahsin Binta Towhid
       </a>
-      <p class="text-xs text-stone-600 mt-0.5 tracking-wide">Dhaka, Bangladesh · Software Engineering & Research</p>
+      <p class="text-xs text-stone-600 mt-0.5 tracking-wide">Dhaka, Bangladesh · Software Engineering & Computational Biology</p>
     </div>
 
     <div class="flex items-center gap-3 text-xs font-medium text-stone-600">
@@ -132,46 +132,40 @@
 
   <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
 
-    <!-- Hero Section: Prominent Name, Role Typer & Profile Portrait -->
+    <!-- Hero Section -->
     <section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center pt-2">
-      
-      <!-- Left Narrative Column -->
       <div class="md:col-span-8 space-y-6">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100 border border-stone-200 text-xs font-medium text-stone-700">
           <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
           Available for Software Engineering & Research Roles
         </div>
 
-        <!-- Prominent Highlighted Name -->
         <h1 class="font-serif text-5xl sm:text-7xl font-normal leading-[1.05] text-stone-900 tracking-tight">
           Tahsin Binta Towhid
         </h1>
 
-        <!-- The Cycling Role Typewriter -->
         <div class="text-lg sm:text-2xl font-mono font-medium text-accent flex items-center min-h-[36px]">
           <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
         </div>
 
-        <!-- Bio Introduction -->
         <p class="text-base sm:text-lg text-stone-600 leading-relaxed font-normal pt-1">
-          Computer Science and Engineering graduate from <strong class="text-stone-900 font-semibold">BRAC University</strong> (CGPA 3.69 / 4.00). Focused on robust backend development, 3NF relational database architecture, machine learning pipelines for computational biology, and hardware-integrated IoT systems.
+          Computer Science and Engineering (CSE) graduate from <strong class="text-stone-900 font-semibold">BRAC University</strong> (CGPA 3.69 / 4.00). Focused on robust backend development, 3NF relational database architecture, neural sequence modeling in computational biology, and deep learning systems.
         </p>
 
-        <!-- Social Action Buttons -->
         <div class="flex flex-wrap items-center gap-3 pt-3">
           <a href="#projects" class="px-5 py-2.5 rounded-xl bg-stone-900 text-stone-50 text-xs font-semibold hover:bg-stone-800 transition flex items-center gap-2">
-            View Projects <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
+            View Research & Projects <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
           </a>
-          <a href="https://github.com/TBTRatri" target="_blank" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5">
+          <a href="https://github.com/TBTRatri" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5">
             <i data-feather="github" class="w-3.5 h-3.5"></i> GitHub
           </a>
-          <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5">
+          <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5">
             <i data-feather="linkedin" class="w-3.5 h-3.5 text-blue-600"></i> LinkedIn
           </a>
         </div>
       </div>
 
-      <!-- Right Column: Profile Picture Crop -->
+      <!-- Profile Portrait -->
       <div class="md:col-span-4 flex justify-center md:justify-end">
         <div class="relative w-64 sm:w-72 aspect-[3/4] rounded-3xl overflow-hidden border border-stone-300/80 shadow-md bg-stone-200">
           <img 
@@ -181,14 +175,13 @@
           />
         </div>
       </div>
-
     </section>
 
-    <!-- Key Metrics / Numbers Row -->
+    <!-- Metrics Row -->
     <section class="grid grid-cols-2 sm:grid-cols-4 gap-6 py-8 border-y border-stone-200">
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">3.69</span>
-        <span class="text-xs text-stone-600 mt-1 block">CGPA · BRAC University</span>
+        <span class="text-xs text-stone-600 mt-1 block">CGPA · BRAC University (CSE)</span>
       </div>
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">2024–26</span>
@@ -199,18 +192,16 @@
         <span class="text-xs text-stone-600 mt-1 block">Relational Database Schemas</span>
       </div>
       <div>
-        <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">Full-Stack</span>
-        <span class="text-xs text-stone-600 mt-1 block">Backend, IoT & QA</span>
+        <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">Deep Learning</span>
+        <span class="text-xs text-stone-600 mt-1 block">Autoencoders, CNNs & Attention</span>
       </div>
     </section>
 
-    <!-- INTERACTIVE RADIAL CONSTELLATION SECTION -->
+    <!-- Technical Arsenal Orbit Constellation -->
     <section id="constellation" class="space-y-6">
       <div class="border-b border-stone-200 pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
         <div>
-          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">
-            Technical Arsenal
-          </span>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Technical Arsenal</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
             Technologies I Work With Across the Stack
           </h2>
@@ -220,35 +211,20 @@
 
       <div class="p-8 sm:p-12 rounded-3xl bg-white border border-stone-200/90 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
         <div class="orbit-container">
-          <!-- Concentric Orbit Rings -->
           <div class="orbit-ring w-[300px] h-[300px]"></div>
           <div class="orbit-ring w-[400px] h-[400px] opacity-40"></div>
 
-          <!-- Central Hub: Displays Active Selection Info -->
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 text-center pointer-events-none transition-all duration-300">
             <span id="center-category" class="font-serif text-2xl font-bold text-stone-900 block leading-tight">Languages</span>
             <span id="center-count" class="text-xs font-mono text-accent mt-1 block">7 core technologies</span>
           </div>
 
-          <!-- Nodes -->
-          <button onclick="selectSkillNode(0)" onmouseenter="selectSkillNode(0)" class="orbit-node active px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm" style="top: 15%; left: 50%;">
-            Languages
-          </button>
-          <button onclick="selectSkillNode(1)" onmouseenter="selectSkillNode(1)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 85%;">
-            Databases
-          </button>
-          <button onclick="selectSkillNode(2)" onmouseenter="selectSkillNode(2)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 85%;">
-            AI & Research
-          </button>
-          <button onclick="selectSkillNode(3)" onmouseenter="selectSkillNode(3)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 85%; left: 50%;">
-            IoT & Hardware
-          </button>
-          <button onclick="selectSkillNode(4)" onmouseenter="selectSkillNode(4)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 15%;">
-            SQA & APIs
-          </button>
-          <button onclick="selectSkillNode(5)" onmouseenter="selectSkillNode(5)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 15%;">
-            Graphics & Tools
-          </button>
+          <button onclick="selectSkillNode(0)" onmouseenter="selectSkillNode(0)" class="orbit-node active px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm" style="top: 15%; left: 50%;">Languages</button>
+          <button onclick="selectSkillNode(1)" onmouseenter="selectSkillNode(1)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 85%;">Databases</button>
+          <button onclick="selectSkillNode(2)" onmouseenter="selectSkillNode(2)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 85%;">AI & Research</button>
+          <button onclick="selectSkillNode(3)" onmouseenter="selectSkillNode(3)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 85%; left: 50%;">IoT & Systems</button>
+          <button onclick="selectSkillNode(4)" onmouseenter="selectSkillNode(4)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 15%;">QA & APIs</button>
+          <button onclick="selectSkillNode(5)" onmouseenter="selectSkillNode(5)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 15%;">Graphics & Tools</button>
         </div>
 
         <div class="mt-8 pt-6 border-t border-stone-100 w-full flex flex-col items-center">
@@ -263,9 +239,7 @@
     <!-- FLAGSHIP THESIS SPOTLIGHT (2024 — 2026) -->
     <section id="thesis" class="space-y-6">
       <div class="flex items-center justify-between border-b border-stone-200 pb-3">
-        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">
-          Flagship Research · 2024 — 2026
-        </span>
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Flagship Research · 2024 — 2026</span>
         <span class="text-xs font-serif italic text-stone-600">Undergraduate Thesis</span>
       </div>
 
@@ -277,414 +251,520 @@
           <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-3 leading-snug">
             A Biophysical Fusion Framework for Species-Conditioned Antibacterial MIC Prediction
           </h2>
-          <p class="text-xs text-stone-600 font-mono mt-1">Timeline: 2024 — 2026 · BRAC University</p>
+          <p class="text-sm text-stone-600 mt-3 leading-relaxed">
+            Formulated and implemented an end-to-end computational framework to predict Minimum Inhibitory Concentrations (MIC) for antimicrobial peptides (AMPs). Coupled biophysical peptide sequence embeddings with bacterial target profiles to advance therapeutic prediction across resistant pathogens.
+          </p>
         </div>
 
-        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-          Developed a multimodal predictive machine learning framework fusing molecular biophysical descriptors with species-specific genomic embeddings to estimate antibacterial Minimum Inhibitory Concentration (MIC). Designed custom feature-extraction pipelines to process high-dimensional biological data while mitigating multicollinearity.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-stone-100 text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 border-y border-stone-100 text-xs">
           <div>
-            <strong class="block text-stone-900 font-medium mb-1">Biological Fusion:</strong>
-            <span class="text-stone-600">Species-conditioned genomic embeddings combined with molecular descriptors.</span>
+            <span class="font-semibold text-stone-900 block">Dataset</span>
+            <span class="text-stone-600 mt-0.5 block">6,000+ Curated Peptide-Pathogen Pairs</span>
           </div>
           <div>
-            <strong class="block text-stone-900 font-medium mb-1">Feature Engineering:</strong>
-            <span class="text-stone-600">Multicollinearity reduction across high-dimensional datasets.</span>
+            <span class="font-semibold text-stone-900 block">Modeling Stack</span>
+            <span class="text-stone-600 mt-0.5 block">PyTorch · Gradient Boosting · Scikit-Learn</span>
           </div>
           <div>
-            <strong class="block text-stone-900 font-medium mb-1">Benchmarking:</strong>
-            <span class="text-stone-600">Evaluated on model-error metrics using Python, Scikit-Learn & Colab.</span>
+            <span class="font-semibold text-stone-900 block">Status</span>
+            <span class="text-stone-600 mt-0.5 block">Manuscript in Final Academic Review</span>
           </div>
         </div>
 
-        <!-- Read Research Summary Modal Trigger -->
-        <div class="pt-2">
-          <button onclick="toggleThesisModal(true)" class="px-5 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-xs font-medium text-stone-800 hover:text-stone-950 transition flex items-center gap-2 bg-stone-50">
-            <i data-feather="book-open" class="w-3.5 h-3.5 text-accent"></i> Read Research Architecture Summary &rarr;
+        <div class="flex items-center justify-between pt-1">
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bioinformatics</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Regression Modeling</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biophysical Descriptors</span>
+          </div>
+          <button onclick="openModal('thesis-modal')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-medium hover:bg-stone-800 transition">
+            <span>Read Summary</span>
+            <i data-feather="chevron-right" class="w-3.5 h-3.5"></i>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- SELECTED ENGINEERING PROJECTS -->
-    <section id="projects" class="space-y-8">
-      <div class="flex items-baseline justify-between border-b border-stone-200 pb-3">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-stone-600">
-          Selected Software & Systems Work
+    <!-- APPLIED SEQUENCE MODELS & COMPUTATIONAL GENOMICS -->
+    <section id="projects" class="space-y-6">
+      <div class="border-b border-stone-200 pb-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Research & Machine Learning Repositories</span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
+          Applied Sequence Models & Computational Genomics
         </h2>
       </div>
 
-      <div class="divide-y divide-stone-200 space-y-8">
+      <div class="space-y-6">
 
-        <!-- Travel Booking -->
-        <article class="pt-6 space-y-3">
-          <div class="flex items-baseline justify-between">
-            <h3 class="font-serif text-2xl font-normal text-stone-900">
-              Integrated Travel Booking Platform
-            </h3>
-            <span class="text-xs text-stone-600 italic font-serif">Software Engineering</span>
-          </div>
-          <p class="text-stone-600 text-sm leading-relaxed max-w-3xl">
-            An integrated travel-booking web platform managing destinations, accommodations, and transit. Implemented booking workflows, dynamic pricing logic, and simulated payment integrations, backed by structured integration and system testing suites.
-          </p>
-          <div class="flex flex-wrap items-center gap-2 text-xs text-stone-600">
-            <span class="font-medium text-stone-900">Stack:</span>
-            <span>Python</span> · <span>MySQL</span> · <span>HTML5/CSS3</span> · <span>REST APIs</span> · <span>Integration Testing</span>
-          </div>
-        </article>
-
-        <!-- Hotel Management (with Interactive Schema Toggle) -->
-        <article class="pt-8 space-y-3">
-          <div class="flex items-baseline justify-between">
-            <h3 class="font-serif text-2xl font-normal text-stone-900">
-              Hotel Management & Reservation System
-            </h3>
-            <span class="text-xs text-stone-600 italic font-serif">Database Project</span>
-          </div>
-          <p class="text-stone-600 text-sm leading-relaxed max-w-3xl">
-            A relational database application built in 3rd Normal Form (3NF) supporting role-based access for Admin and Customer users. Features automated reservation conflict detection, discount rules, automated billing, and audit logs for staff operations.
-          </p>
-          <div class="flex flex-wrap items-center gap-2 text-xs text-stone-600">
-            <span class="font-medium text-stone-900">Stack:</span>
-            <span>Python</span> · <span>MySQL</span> · <span>3NF Database Design</span> · <span>ACID Transactions</span>
-          </div>
-
-          <!-- Interactive Schema Peek Toggle -->
-          <div class="pt-2">
-            <button onclick="toggleSchemaPeek()" class="text-xs font-mono text-accent hover:underline flex items-center gap-1.5">
-              <i data-feather="database" class="w-3.5 h-3.5"></i>
-              <span id="schema-btn-text">View 3NF Relational Schema Architecture</span>
-            </button>
-            <div id="schema-peek-box" class="hidden mt-3 p-4 rounded-xl bg-stone-900 text-stone-200 font-mono text-xs overflow-x-auto border border-stone-800">
-<pre>-- Core 3NF Normalized Hotel Schema (Extract)
-CREATE TABLE Rooms (
-    room_id INT AUTO_INCREMENT PRIMARY KEY,
-    room_number VARCHAR(10) UNIQUE NOT NULL,
-    room_type VARCHAR(50) NOT NULL,
-    price_per_night DECIMAL(10, 2) NOT NULL,
-    status ENUM('Available', 'Occupied', 'Maintenance') DEFAULT 'Available'
-);
-
-CREATE TABLE Reservations (
-    reservation_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_id INT NOT NULL,
-    room_id INT NOT NULL,
-    check_in DATE NOT NULL,
-    check_out DATE NOT NULL,
-    total_amount DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
-    FOREIGN KEY (room_id) REFERENCES Rooms(room_id),
-    CHECK (check_out > check_in) -- Reservation conflict prevention
-);</pre>
+        <!-- Project 1: DNA Autoencoder Storage -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 font-semibold">
+                Deep Learning · Sequence Storage
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                DNA Autoencoder: Latent Sequence Representations for Biological Data Storage
+              </h3>
             </div>
+            <a href="https://github.com/TBTRatri/DNA_Autoencoder_Storage" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 hover:text-stone-950 transition bg-white shadow-sm self-start">
+              <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+            </a>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Constructed deep neural autoencoder architectures to encode, compress, and reconstruct synthetic DNA information payloads. Incorporated domain-specific biological synthesis constraints—enforcing GC-content balance and penalizing homopolymer repetitions within latent space optimizations to ensure high-fidelity sequence preservation.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Autoencoders</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Latent Representations</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biological Constraints</span>
           </div>
         </article>
 
-        <!-- Smart Library & IoT Planter -->
-        <article class="pt-8 space-y-3">
-          <div class="flex items-baseline justify-between">
-            <h3 class="font-serif text-2xl font-normal text-stone-900">
-              Smart Library Automation & IoT Planter Systems
-            </h3>
-            <span class="text-xs text-stone-600 italic font-serif">Hardware & IoT</span>
+        <!-- Project 2: Nucleic Acid Binding Site Prediction -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200/60 font-semibold">
+                Neural Sequence Modeling · Benchmark
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                Nucleic Acid Binding Site Prediction: 1D CNN with Attention vs. Autoencoder Baselines
+              </h3>
+            </div>
+            <a href="https://github.com/TBTRatri/Nucleic_Acid_Binding_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 hover:text-stone-950 transition bg-white shadow-sm self-start">
+              <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+            </a>
           </div>
-          <p class="text-stone-600 text-sm leading-relaxed max-w-3xl">
-            Hardware-software embedded systems integrating RFID readers, moisture probes, and LCD modules with an Arduino microcontroller. Synchronized physical device states with a real-time Python desktop interface through serial communication.
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Investigated residue-level RNA and DNA binding interface detection across 1,634 benchmark protein sequences (481,252 residues). Implemented a multi-scale 1D CNN integrated with a 4-head Multi-Head Self-Attention layer and masked Binary Cross-Entropy loss to manage variable sequence lengths (up to 1,781 residues), achieving 0.7340 AUC under severe class imbalance (~9.54% binding sites). Evaluated against an undercomplete convolutional autoencoder baseline.
           </p>
-          <div class="flex flex-wrap items-center gap-2 text-xs text-stone-600">
-            <span class="font-medium text-stone-900">Stack:</span>
-            <span>Arduino</span> · <span>Python</span> · <span>RFID</span> · <span>Sensors & Relays</span> · <span>Serial Communication</span>
+
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">1D CNN</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Multi-Head Attention</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Class Imbalance</span>
           </div>
         </article>
 
-        <!-- 2D Car Racing Game -->
-        <article class="pt-8 space-y-3">
-          <div class="flex items-baseline justify-between">
-            <h3 class="font-serif text-2xl font-normal text-stone-900">
-              2D Arcade Car Racing Game
-            </h3>
-            <span class="text-xs text-stone-600 italic font-serif">Computer Graphics</span>
+        <!-- Project 3: GEO Gene Expression Profiling & PCA -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/60 font-semibold">
+                Genomics · Unsupervised Dimensionality Reduction
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                High-Dimensional Genomic Expression Profiling & PCA on NCBI GEO Data
+              </h3>
+            </div>
+            <a href="https://github.com/TBTRatri/GEO_Gene_Expression_PCA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 hover:text-stone-950 transition bg-white shadow-sm self-start">
+              <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+            </a>
           </div>
-          <p class="text-stone-600 text-sm leading-relaxed max-w-3xl">
-            An interactive 2D desktop game engine developed with Python and OpenGL. Features continuous frame rendering, collision detection logic, geometric transformations, and interactive user controls.
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Automated retrieval and parsing of microarray gene expression series (<code class="font-mono text-xs">GSE6613</code>, Platform GPL96) via <code class="font-mono text-xs">GEOparse</code>. Handled the high-dimensional $p \gg n$ regime across 22,283 probe features and 105 samples by implementing zero-variance filtering, $z$-score standardization, and orthogonal Principal Component Analysis (PCA) alongside expression heatmap landscapes.
           </p>
-          <div class="flex flex-wrap items-center gap-2 text-xs text-stone-600">
-            <span class="font-medium text-stone-900">Stack:</span>
-            <span>Python</span> · <span>OpenGL</span> · <span>Geometric Transformations</span> · <span>Collision Detection</span>
+
+          <div class="flex flex-wrap items-center gap-2 pt-2 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Python</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">GEOparse</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PCA</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Scikit-Learn</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Seaborn Heatmaps</span>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Currently Exploring / Intellectual Curiosity Strip -->
-    <section class="space-y-4">
-      <h2 class="text-xs font-semibold uppercase tracking-wider text-stone-600">
-        Continuous Learning & Technical Interests
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3.5">
-          <div class="p-2 rounded-lg bg-stone-100 text-accent">
-            <i data-feather="cpu" class="w-4 h-4"></i>
-          </div>
-          <div>
-            <h4 class="font-medium text-stone-900 text-sm">Systems & High-Performance Backends</h4>
-            <p class="text-xs text-stone-600 mt-1 leading-relaxed">Exploring advanced relational query optimization, indexing strategies, and distributed database consistency.</p>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-start gap-3.5">
-          <div class="p-2 rounded-lg bg-stone-100 text-accent">
-            <i data-feather="activity" class="w-4 h-4"></i>
-          </div>
-          <div>
-            <h4 class="font-medium text-stone-900 text-sm">Computational Biology & AI</h4>
-            <p class="text-xs text-stone-600 mt-1 leading-relaxed">Deepening focus on deep neural embeddings and predictive biophysics for antimicrobial peptide discovery.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Academic Background -->
+    <!-- SOFTWARE & SYSTEMS ENGINEERING -->
     <section class="space-y-6">
-      <h2 class="text-xs font-semibold uppercase tracking-wider text-stone-600">
-        Academic Credentials
-      </h2>
+      <div class="border-b border-stone-200 pb-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Software Architecture</span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
+          Full-Stack, Relational Schemas & Systems
+        </h2>
+      </div>
 
-      <div class="space-y-4">
-        <div class="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-          <div>
-            <h3 class="font-serif text-xl font-normal text-stone-900">BRAC University</h3>
-            <p class="text-xs text-stone-600 mt-1">Bachelor of Science in Computer Science and Engineering · Graduated Sept 2026</p>
-            <p class="text-xs text-stone-600 mt-2">Coursework: DBMS, Software Engineering, Microprocessors, OOP, Data Structures</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Hotel Management (3NF Relational DB) -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+              Database Engineering & Systems
+            </span>
+            <h3 class="font-serif text-xl font-medium text-stone-900">
+              3NF Relational Hotel Management & Booking Engine
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Designed a fully normalized (Third Normal Form) transactional database schema in Oracle SQL. Engineered complex nested joins, PL/SQL stored procedures, and triggers ensuring strict referential integrity and zero anomaly persistence across concurrent reservation workflows.
+            </p>
           </div>
-          <span class="text-sm font-serif font-medium text-stone-900">CGPA: 3.69 / 4.00</span>
+          <div class="space-y-3 pt-2">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-stone-600">
+              <span class="px-2 py-0.5 rounded bg-stone-100">Oracle SQL</span>
+              <span class="px-2 py-0.5 rounded bg-stone-100">PL/SQL</span>
+              <span class="px-2 py-0.5 rounded bg-stone-100">ACID Transactions</span>
+            </div>
+            <button onclick="openModal('db-modal')" class="text-xs font-mono text-accent hover:underline flex items-center gap-1">
+              Inspect Normalized Schema &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- IoT Smart Planter -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+              Embedded Systems & Hardware
+            </span>
+            <h3 class="font-serif text-xl font-medium text-stone-900">
+              Autonomous Smart Planter with Closed-Loop Sensory Control
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Engineered an autonomous environmental management device built on Arduino microcontroller firmware. Integrated multi-channel soil moisture sensors, automated water pumping relays, active drainage controls, and ultrasonic pest deterrents for precision indoor flora sustenance.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-stone-600 pt-2">
+            <span class="px-2 py-0.5 rounded bg-stone-100">Arduino Uno</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">C/C++ Embedded</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">Hardware Prototyping</span>
+          </div>
+        </article>
+
+        <!-- Travel Booking Web Platform -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+              Full-Stack Application
+            </span>
+            <h3 class="font-serif text-xl font-medium text-stone-900">
+              Resort & Itinerary Management Web Platform
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Engineered a multi-tier reservation portal featuring modular routing, session management, dynamic availability updates, and role-based access control for administrative personnel and end users.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-stone-600 pt-2">
+            <span class="px-2 py-0.5 rounded bg-stone-100">PHP / MVC</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">MySQL</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Computer Graphics Interactive Simulator -->
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+              Graphics & Mathematical Modeling
+            </span>
+            <h3 class="font-serif text-xl font-medium text-stone-900">
+              Real-Time OpenGL Graphics Simulation
+            </h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Implemented 2D/3D matrix transformation algorithms, viewport clipping, lighting models, and event-driven keyboard/mouse listener pipelines using the OpenGL graphics pipeline in C++.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-stone-600 pt-2">
+            <span class="px-2 py-0.5 rounded bg-stone-100">OpenGL</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">C++</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">GLUT Pipeline</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ACADEMIC PEDIGREE -->
+    <section class="space-y-6">
+      <div class="border-b border-stone-200 pb-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Academic Foundations</span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
+          Education & Credentials
+        </h2>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
+          <div>
+            <h3 class="font-serif text-xl font-medium text-stone-900">BRAC University</h3>
+            <p class="text-xs text-stone-600 font-mono mt-0.5">Bachelor of Science in Computer Science and Engineering</p>
+          </div>
+          <div class="text-right">
+            <span class="text-sm font-serif font-bold text-stone-900 block">CGPA 3.69 / 4.00</span>
+            <span class="text-xs text-stone-500 font-mono">Dhaka, Bangladesh</span>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex justify-between items-baseline">
-            <div>
-              <h4 class="font-serif text-base font-normal text-stone-900">Milestone College, Uttara</h4>
-              <p class="text-xs text-stone-600 mt-0.5">Higher Secondary Certificate (HSC), Science</p>
-            </div>
-            <span class="text-xs font-medium text-stone-700">GPA 5.00</span>
-          </div>
-
-          <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex justify-between items-baseline">
-            <div>
-              <h4 class="font-serif text-base font-normal text-stone-900">Joydebpur Govt. Girls' High School</h4>
-              <p class="text-xs text-stone-600 mt-0.5">Secondary School Certificate (SSC), Science</p>
-            </div>
-            <span class="text-xs font-medium text-stone-700">GPA 5.00</span>
+        <div class="space-y-3">
+          <span class="text-xs font-mono font-semibold text-stone-900 uppercase tracking-wider block">
+            Core Curriculum Completed
+          </span>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-700">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Data Structures & Algorithms</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Database Systems (3NF / SQL)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Machine Learning & Neural Networks</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Software Quality Assurance (SQA)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Microprocessor & Embedded Systems</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Computer Networks & Sockets</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Operating Systems & POSIX</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="pt-12 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-600 gap-4">
-      <p>&copy; 2026 Tahsin Binta Towhid. All rights reserved.</p>
-      <div class="flex items-center gap-6">
-        <a href="https://github.com/TBTRatri" target="_blank" class="hover:text-stone-900 transition">GitHub</a>
-        <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" class="hover:text-stone-900 transition">LinkedIn</a>
-        <button onclick="copyEmail()" class="hover:text-stone-900 transition">Copy Email</button>
+    <!-- CONTACT BANNER -->
+    <section class="p-10 rounded-3xl bg-stone-900 text-stone-50 text-center space-y-6">
+      <div class="space-y-2">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal">Let's build something exceptional.</h2>
+        <p class="text-xs sm:text-sm text-stone-400 max-w-lg mx-auto font-sans leading-relaxed">
+          Open to software engineering positions, backend development, and computational machine learning research teams.
+        </p>
       </div>
-    </footer>
+
+      <div class="flex flex-wrap justify-center items-center gap-4 pt-2">
+        <button onclick="copyEmail()" class="px-6 py-3 rounded-full bg-accent text-white text-xs font-mono font-semibold hover:bg-emerald-700 transition flex items-center gap-2 shadow-lg">
+          <i data-feather="mail" class="w-4 h-4"></i>
+          <span>tahsinbintatowhid@gmail.com</span>
+        </button>
+        <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-stone-700 hover:border-stone-400 text-xs font-mono text-stone-300 hover:text-white transition flex items-center gap-2">
+          <i data-feather="linkedin" class="w-4 h-4 text-blue-400"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
 
   </main>
 
-  <!-- RESEARCH SUMMARY MODAL -->
-  <div id="thesis-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 border border-stone-200 shadow-2xl space-y-6 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="toggleThesisModal(false)" class="absolute top-6 right-6 p-2 rounded-full hover:bg-stone-100 text-stone-500 hover:text-stone-900 transition">
+  <footer class="max-w-4xl mx-auto px-6 py-12 border-t border-stone-200/80 text-center text-xs font-mono text-stone-500">
+    <p>&copy; 2026 Tahsin Binta Towhid · Built with semantic HTML, Tailwind CSS, & Feather Icons</p>
+  </footer>
+
+  <!-- MODAL: THESIS SUMMARY -->
+  <div id="thesis-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 sm:p-10 border border-stone-300 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto relative">
+      <button onclick="closeModal('thesis-modal')" class="absolute top-6 right-6 p-2 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-100 transition">
         <i data-feather="x" class="w-5 h-5"></i>
       </button>
 
       <div>
-        <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-accent border border-stone-200">
-          Thesis Case Study · 2024 — 2026
+        <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+          Thesis Deep-Dive
         </span>
-        <h3 class="font-serif text-2xl font-bold text-stone-900 mt-3 leading-snug">
-          Species-Conditioned Antibacterial MIC Prediction Architecture
+        <h3 class="font-serif text-2xl font-medium text-stone-900 mt-3">
+          Species-Conditioned Antibacterial MIC Prediction
         </h3>
-        <p class="text-xs text-stone-500 font-mono mt-1">BRAC University Computational Biophysics Project</p>
+        <p class="text-xs font-mono text-stone-500 mt-1">Undergraduate Thesis · Supervised at BRAC University (2024–2026)</p>
       </div>
 
-      <div class="space-y-4 text-xs sm:text-sm text-stone-700 leading-relaxed">
-        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200/70">
-          <h4 class="font-bold text-stone-900 mb-1">1. The Biological Inquiry</h4>
-          <p>Minimum Inhibitory Concentration (MIC) quantification often overlooks bacterial species specificity. This framework establishes a predictive model conditioned on bacterial genomic markers alongside antimicrobial peptides.</p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200/70">
-          <h4 class="font-bold text-stone-900 mb-1">2. Multimodal Fusion Pipeline</h4>
-          <p>Extracts physicochemical and topological properties from peptide sequences, maps species genomic profiles, reduces multicollinear variance through correlation filtering, and trains benchmarked regressor models.</p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200/70">
-          <h4 class="font-bold text-stone-900 mb-1">3. Tools & Deliverables</h4>
-          <p>Engineered using Python, NumPy, Pandas, Scikit-Learn, and Google Colab environments with cross-validated error metrics.</p>
-        </div>
+      <div class="space-y-4 text-xs text-stone-600 leading-relaxed font-sans border-t border-stone-100 pt-4">
+        <p>
+          <strong class="text-stone-900">Background:</strong> Conventional discovery of antimicrobial peptides (AMPs) is bottlenecked by experimental screening costs. Most existing machine learning models predict binary classification (antimicrobial vs. non-antimicrobial) without estimating continuous minimum inhibitory concentrations (MIC) across specific bacterial pathogens.
+        </p>
+        <p>
+          <strong class="text-stone-900">Methodology:</strong> Extracted continuous biophysical sequence representations (hydrophobic moments, net charge, amphipathicity, and amino acid composition vectors) fused with one-hot encoded bacterial targets across 6,000+ validated laboratory records.
+        </p>
+        <p>
+          <strong class="text-stone-900">Outcome:</strong> Trained multi-variable regression architectures with cross-validated evaluation metrics (RMSE, $R^2$), establishing an interpretable predictive pipeline for computational drug design.
+        </p>
       </div>
 
       <div class="pt-2 flex justify-end">
-        <button onclick="toggleThesisModal(false)" class="px-5 py-2 bg-stone-900 text-stone-50 rounded-xl text-xs font-medium hover:bg-stone-800 transition">
+        <button onclick="closeModal('thesis-modal')" class="px-5 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-medium hover:bg-stone-800 transition">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Interactive Scripts -->
+  <!-- MODAL: RELATIONAL 3NF SCHEMA -->
+  <div id="db-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 sm:p-10 border border-stone-300 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto relative">
+      <button onclick="closeModal('db-modal')" class="absolute top-6 right-6 p-2 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-100 transition">
+        <i data-feather="x" class="w-5 h-5"></i>
+      </button>
+
+      <div>
+        <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+          Database Architecture
+        </span>
+        <h3 class="font-serif text-2xl font-medium text-stone-900 mt-3">
+          Normalized Relational Architecture (Oracle SQL)
+        </h3>
+        <p class="text-xs font-mono text-stone-500 mt-1">Strict 3NF Schema · Foreign Key Integrity · PL/SQL Automation</p>
+      </div>
+
+      <div class="space-y-4 text-xs font-mono text-stone-700 border-t border-stone-100 pt-4">
+        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 space-y-2">
+          <p class="font-bold text-stone-900">Entities &amp; Relations:</p>
+          <p>• <strong>GUESTS:</strong> <span class="text-stone-500">guest_id (PK), first_name, last_name, email, phone, id_proof</span></p>
+          <p>• <strong>ROOM_TYPES:</strong> <span class="text-stone-500">type_id (PK), category_name, base_price, max_occupancy</span></p>
+          <p>• <strong>ROOMS:</strong> <span class="text-stone-500">room_no (PK), type_id (FK), floor_no, maintenance_status</span></p>
+          <p>• <strong>BOOKINGS:</strong> <span class="text-stone-500">booking_id (PK), guest_id (FK), room_no (FK), check_in, check_out</span></p>
+          <p>• <strong>PAYMENTS:</strong> <span class="text-stone-500">payment_id (PK), booking_id (FK), amount, method, status</span></p>
+        </div>
+        <p class="text-stone-600 font-sans leading-relaxed">
+          Applied stored procedures and compound triggers to prevent over-allocation of room assets and automatically calculate tariffs and taxes upon checkout.
+        </p>
+      </div>
+
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeModal('db-modal')" class="px-5 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-medium hover:bg-stone-800 transition">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIC: Typewriter, Skills Constellation, Clipboard & Modals -->
   <script>
+    // 1. Initialize Feather Icons
     feather.replace();
 
-    // 1. Cycling Role Typewriter (with CSE Graduate distinction)
-    const words = [
-      "CSE Graduate @ BRAC University",
+    // 2. Cycling Typewriter
+    const roles = [
       "Software Engineer",
-      "Backend & Relational DB Architect",
-      "Computational Biology Researcher",
-      "IoT & Embedded Systems Builder"
+      "CSE Graduate @ BRAC University",
+      "Machine Learning Researcher",
+      "Database Systems Developer"
     ];
-
-    let wordIndex = 0;
-    let charIndex = 0;
+    let roleIdx = 0;
+    let charIdx = 0;
     let isDeleting = false;
-    const typingSpeed = 90;
-    const deletingSpeed = 45;
-    const holdTime = 1600;
-    const target = document.getElementById("typewriter-text");
+    const typeSpeed = 95;
+    const deleteSpeed = 45;
+    const pauseTime = 1900;
+    const typewriterElem = document.getElementById("typewriter-text");
 
-    function typeEffect() {
-      const currentWord = words[wordIndex];
+    function typeLoop() {
+      const currentRole = roles[roleIdx];
       if (isDeleting) {
-        target.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
+        typewriterElem.textContent = currentRole.substring(0, charIdx - 1);
+        charIdx--;
       } else {
-        target.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
+        typewriterElem.textContent = currentRole.substring(0, charIdx + 1);
+        charIdx++;
       }
 
-      if (!isDeleting && charIndex === currentWord.length) {
-        setTimeout(() => { isDeleting = true; typeEffect(); }, holdTime);
-      } else if (isDeleting && charIndex === 0) {
+      if (!isDeleting && charIdx === currentRole.length) {
+        setTimeout(() => { isDeleting = true; typeLoop(); }, pauseTime);
+        return;
+      } else if (isDeleting && charIdx === 0) {
         isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(typeEffect, 300);
-      } else {
-        setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+        roleIdx = (roleIdx + 1) % roles.length;
+        setTimeout(typeLoop, 400);
+        return;
       }
-    }
 
-    // 2. Interactive Constellation Radar Data
-    const constellationData = [
+      setTimeout(typeLoop, isDeleting ? deleteSpeed : typeSpeed);
+    }
+    typeLoop();
+
+    // 3. Technical Arsenal Orbit Data
+    const skillCategories = [
       {
         name: "Languages",
-        count: "7 technologies",
-        narrative: "Languages used for algorithmic foundations, backend logic, and user interfaces.",
-        skills: ["Python", "SQL", "C", "C/C++", "JavaScript", "HTML5", "CSS3"]
+        count: "7 core technologies",
+        narrative: "Languages used for algorithmic problem-solving, software engineering, and scientific pipelines.",
+        skills: ["Python", "C", "C++", "Java", "SQL (Oracle)", "JavaScript", "PHP"]
       },
       {
         name: "Databases",
-        count: "5 core areas",
-        narrative: "Relational database modeling with strict ACID consistency and normalized schemas.",
-        skills: ["MySQL", "3NF Normalization", "ACID Transactions", "CRUD Operations", "Relational Schemas"]
+        count: "Structured & Relational",
+        narrative: "Database engineering emphasizing ACID compliance, 3NF normalization, and query performance.",
+        skills: ["Oracle Database", "MySQL", "PL/SQL", "Schema Normalization", "Triggers & Procedures"]
       },
       {
         name: "AI & Research",
-        count: "5 frameworks",
-        narrative: "Machine learning architectures and high-dimensional computational biological data pipelines.",
-        skills: ["Scikit-Learn", "NumPy", "Pandas", "Feature Engineering", "Google Colab"]
+        count: "Deep Learning & Stats",
+        narrative: "Neural architectures, sequence modeling, and dimensional reduction workflows.",
+        skills: ["PyTorch", "Autoencoders", "1D CNNs", "Attention Layers", "Scikit-Learn", "PCA", "Pandas", "NumPy"]
       },
       {
-        name: "IoT & Hardware",
-        count: "6 components",
-        narrative: "Microcontroller circuit hardware interfacing with Python desktop clients via serial protocols.",
-        skills: ["Arduino", "RFID", "Moisture Sensors", "Relays", "LCD & Keypads", "Serial Comm"]
+        name: "IoT & Systems",
+        count: "Hardware & Operating",
+        narrative: "Microcontroller circuit prototyping, sensor automation, and systems programming.",
+        skills: ["Arduino Uno", "Embedded C++", "POSIX Linux", "Bash", "Circuit Breadboarding"]
       },
       {
-        name: "SQA & APIs",
-        count: "5 methodologies",
-        narrative: "Systematic test case design, integration testing, and RESTful service validation.",
-        skills: ["REST APIs", "Test Case Design", "Integration Testing", "SDLC", "Postman"]
+        name: "QA & APIs",
+        count: "Testing & Validation",
+        narrative: "Test case formulations, defect tracking, and API integration workflows.",
+        skills: ["Software Quality Assurance (SQA)", "Postman", "Selenium Basics", "RESTful APIs", "Git / GitHub"]
       },
       {
         name: "Graphics & Tools",
-        count: "5 tools",
-        narrative: "Low-level graphics transformations and modern developer version control.",
-        skills: ["OpenGL", "2D Transformations", "Git", "GitHub", "VS Code"]
+        count: "Rendering & Tooling",
+        narrative: "Low-level mathematical rendering pipelines and build environments.",
+        skills: ["OpenGL", "GLUT", "VS Code", "LaTeX", "Jupyter", "Google Colab"]
       }
     ];
 
-    function selectSkillNode(index) {
-      const nodes = document.querySelectorAll(".orbit-node");
-      nodes.forEach((node, idx) => {
-        if (idx === index) {
-          node.classList.add("active");
-          node.classList.remove("text-stone-700");
+    function selectSkillNode(idx) {
+      document.querySelectorAll(".orbit-node").forEach((btn, i) => {
+        if (i === idx) {
+          btn.classList.add("active");
+          btn.classList.remove("text-stone-700");
         } else {
-          node.classList.remove("active");
-          node.classList.add("text-stone-700");
+          btn.classList.remove("active");
+          btn.classList.add("text-stone-700");
         }
       });
 
-      const data = constellationData[index];
-      document.getElementById("center-category").textContent = data.name;
-      document.getElementById("center-count").textContent = data.count;
-      document.getElementById("skill-narrative").textContent = data.narrative;
+      const cat = skillCategories[idx];
+      document.getElementById("center-category").textContent = cat.name;
+      document.getElementById("center-count").textContent = cat.count;
+      document.getElementById("skill-narrative").textContent = cat.narrative;
 
       const pillsContainer = document.getElementById("skill-pills");
       pillsContainer.innerHTML = "";
-      data.skills.forEach(skill => {
+      cat.skills.forEach(skill => {
         const span = document.createElement("span");
-        span.className = "px-3 py-1 bg-stone-100 text-stone-800 rounded-lg border border-stone-200";
+        span.className = "px-3 py-1 rounded-full bg-stone-100 text-stone-800 border border-stone-200";
         span.textContent = skill;
         pillsContainer.appendChild(span);
       });
     }
+    // Initialize default node
+    selectSkillNode(0);
 
-    // 3. Schema Peek Toggle
-    function toggleSchemaPeek() {
-      const box = document.getElementById("schema-peek-box");
-      const text = document.getElementById("schema-btn-text");
-      if (box.classList.contains("hidden")) {
-        box.classList.remove("hidden");
-        text.textContent = "Hide 3NF Schema Architecture";
-      } else {
-        box.classList.add("hidden");
-        text.textContent = "View 3NF Relational Schema Architecture";
-      }
-    }
-
-    // 4. Thesis Modal Handler
-    function toggleThesisModal(show) {
-      const modal = document.getElementById("thesis-modal");
-      if (show) {
-        modal.classList.remove("hidden");
-      } else {
-        modal.classList.add("hidden");
-      }
-    }
-
-    // 5. One-Click Copy Email Function
+    // 4. Copy Email & Toast Notification
     function copyEmail() {
-      navigator.clipboard.writeText("tahsinbintatowhid@gmail.com").then(() => {
+      const email = "tahsinbintatowhid@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
         const toast = document.getElementById("toast");
         toast.classList.remove("translate-y-20", "opacity-0");
+        toast.classList.add("translate-y-0", "opacity-100");
         setTimeout(() => {
+          toast.classList.remove("translate-y-0", "opacity-100");
           toast.classList.add("translate-y-20", "opacity-0");
-        }, 2500);
+        }, 2600);
       });
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      typeEffect();
-      selectSkillNode(0);
-    });
+    // 5. Modal Logic
+    function openModal(id) {
+      document.getElementById(id).classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+    window.onclick = function(e) {
+      if (e.target.classList.contains("modal-backdrop")) {
+        e.target.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }
+    };
   </script>
-
 </body>
 </html>
