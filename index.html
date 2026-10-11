@@ -25,6 +25,7 @@
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
+            paper: '#faf8f5',
             stone: {
               50: '#f9f8f6',
               100: '#f2efe9',
@@ -43,14 +44,9 @@
   </script>
 
   <style>
-    /* Gradient Background Setup */
     body {
-      background: radial-gradient(circle at 15% 10%, rgba(15, 118, 110, 0.04) 0%, transparent 40%),
-                  radial-gradient(circle at 85% 65%, rgba(217, 119, 6, 0.04) 0%, transparent 45%),
-                  linear-gradient(180deg, #fbfaf8 0%, #f4f0e8 50%, #eae4d8 100%);
-      background-attachment: fixed;
+      background-color: #faf8f5;
     }
-
     ::selection {
       background: #fed7aa;
       color: #211e19;
@@ -107,7 +103,7 @@
   </style>
 </head>
 
-<body class="text-stone-900 font-sans antialiased min-h-screen relative">
+<body class="bg-paper text-stone-900 font-sans antialiased min-h-screen relative">
 
   <!-- Toast Notification -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-stone-900 text-stone-50 px-4 py-2.5 rounded-xl shadow-xl flex items-center gap-2 text-xs font-mono">
@@ -125,7 +121,7 @@
     </div>
 
     <div class="flex items-center gap-3 text-xs font-medium text-stone-600">
-      <a href="Tahsin_Binta_Towhid_CV.pdf" download class="px-4 py-2 rounded-full border border-stone-300 hover:border-stone-800 hover:text-stone-900 transition flex items-center gap-2 bg-stone-100/70 shadow-sm backdrop-blur-sm">
+      <a href="Tahsin_Binta_Towhid_CV.pdf" download class="px-4 py-2 rounded-full border border-stone-300 hover:border-stone-800 hover:text-stone-900 transition flex items-center gap-2 bg-stone-100/50 shadow-sm">
         <i data-feather="file-text" class="w-3.5 h-3.5 text-accent"></i> Résumé
       </a>
       <button onclick="copyEmail()" class="px-4 py-2 rounded-full bg-stone-900 text-stone-50 hover:bg-stone-800 transition flex items-center gap-1.5 shadow-sm">
@@ -139,7 +135,7 @@
     <!-- Hero Section -->
     <section class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center pt-2">
       <div class="md:col-span-8 space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100/80 border border-stone-200/80 text-xs font-medium text-stone-700 backdrop-blur-sm">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100 border border-stone-200 text-xs font-medium text-stone-700">
           <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
           Available for Software Engineering & Research Roles
         </div>
@@ -153,17 +149,17 @@
         </div>
 
         <p class="text-base sm:text-lg text-stone-600 leading-relaxed font-normal pt-1">
-          Computer Science and Engineering (CSE) graduate from <strong class="text-stone-900 font-semibold">Brac University</strong> (CGPA 3.69 / 4.00). Focused on robust backend systems, 3NF relational database architecture, neural sequence modeling in computational biophysics, and deep learning models.
+          Computer Science and Engineering (CSE) graduate from <strong class="text-stone-900 font-semibold">Brac University</strong> (CGPA 3.69 / 4.00). Focused on robust backend systems, 3NF relational database architecture, neural sequence modeling in computational biophysics, and deep learning systems.
         </p>
 
         <div class="flex flex-wrap items-center gap-3 pt-3">
           <a href="#projects" class="px-5 py-2.5 rounded-xl bg-stone-900 text-stone-50 text-xs font-semibold hover:bg-stone-800 transition flex items-center gap-2 shadow-sm">
             View Research & Projects <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
           </a>
-          <a href="https://github.com/TBTRatri" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white/70 backdrop-blur-sm shadow-sm">
+          <a href="https://github.com/TBTRatri" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white shadow-sm">
             <i data-feather="github" class="w-3.5 h-3.5"></i> GitHub
           </a>
-          <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white/70 backdrop-blur-sm shadow-sm">
+          <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white shadow-sm">
             <i data-feather="linkedin" class="w-3.5 h-3.5 text-blue-600"></i> LinkedIn
           </a>
         </div>
@@ -182,14 +178,14 @@
     </section>
 
     <!-- Metrics Row -->
-    <section class="grid grid-cols-2 sm:grid-cols-4 gap-6 py-8 border-y border-stone-200/90">
+    <section class="grid grid-cols-2 sm:grid-cols-4 gap-6 py-8 border-y border-stone-200">
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">3.69</span>
         <span class="text-xs text-stone-600 mt-1 block">CGPA · Brac University (CSE)</span>
       </div>
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">32,607</span>
-        <span class="text-xs text-stone-600 mt-1 block">Curated Activity Records</span>
+        <span class="text-xs text-stone-600 mt-1 block">Curated Activity Records[cite: 41, 109]</span>
       </div>
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">3NF / ACID</span>
@@ -197,13 +193,13 @@
       </div>
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">ESM-2 / DL</span>
-        <span class="text-xs text-stone-600 mt-1 block">Protein Language & Fusion Models</span>
+        <span class="text-xs text-stone-600 mt-1 block">Protein Language & Fusion Models[cite: 34, 107]</span>
       </div>
     </section>
 
     <!-- Technical Arsenal Orbit Constellation -->
     <section id="constellation" class="space-y-6">
-      <div class="border-b border-stone-200/90 pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+      <div class="border-b border-stone-200 pb-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
         <div>
           <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Technical Arsenal</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
@@ -213,7 +209,7 @@
         <p class="text-xs text-stone-500 font-mono">Hover or tap any orbit node</p>
       </div>
 
-      <div class="p-8 sm:p-12 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+      <div class="p-8 sm:p-12 rounded-3xl bg-white border border-stone-200/90 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
         <div class="orbit-container">
           <div class="orbit-ring w-[300px] h-[300px]"></div>
           <div class="orbit-ring w-[400px] h-[400px] opacity-40"></div>
@@ -242,58 +238,62 @@
 
     <!-- FLAGSHIP THESIS SPOTLIGHT (DEFENDED OCTOBER 2025) -->
     <section id="thesis" class="space-y-6">
-      <div class="flex items-center justify-between border-b border-stone-200/90 pb-3">
-        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Flagship Research · Defended & Approved</span>
-        <span class="text-xs font-serif italic text-stone-600">Brac University Thesis</span>
+      <div class="flex items-center justify-between border-b border-stone-200 pb-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Flagship Research · Defended & Approved[cite: 6]</span>
+        <span class="text-xs font-serif italic text-stone-600">Brac University Thesis[cite: 4]</span>
       </div>
 
-      <div class="p-8 sm:p-10 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-6">
+      <div class="p-8 sm:p-10 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6">
         <div>
           <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
             Computational Biophysics & Deep Learning
           </span>
           <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-3 leading-snug">
-            Leveraging Unpaired Data to Mitigate Paired Data Scarcity and Foster Generalizable Multimodal Models
+            Leveraging Unpaired Data to Mitigate Paired Data Scarcity and Foster Generalizable Multimodal Models[cite: 4, 6]
           </h2>
           <p class="text-sm text-stone-600 mt-3 leading-relaxed">
-            Formulated and implemented a <strong>Biophysical Fusion Ensemble</strong> to predict species-conditioned Minimum Inhibitory Concentrations (MIC) of antimicrobial peptides (AMPs). Fused 320-D ESM-2 contextual protein embeddings with 12 handcrafted physicochemical descriptors and learnable bacterial target embeddings across 286 species.
+            Formulated and implemented a <strong>Biophysical Fusion Ensemble</strong> to predict species-conditioned Minimum Inhibitory Concentrations (MIC) of antimicrobial peptides (AMPs)[cite: 18, 34]. Fused 320-D ESM-2 contextual protein embeddings with 12 handcrafted physicochemical descriptors and learnable bacterial target embeddings across 286 species[cite: 34, 49].
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 py-4 border-y border-stone-100 text-xs">
           <div>
             <span class="font-semibold text-stone-900 block">Dataset</span>
-            <span class="text-stone-600 mt-0.5 block">32,607 Records (6,148 Peptides)</span>
+            <span class="text-stone-600 mt-0.5 block">32,607 Records (6,148 Peptides)[cite: 49]</span>
           </div>
           <div>
             <span class="font-semibold text-stone-900 block">Internal Error</span>
-            <span class="text-stone-600 mt-0.5 block">0.3625 MAE (Fold Error 2.30×)</span>
+            <span class="text-stone-600 mt-0.5 block">0.3625 MAE (Fold Error 2.30×)[cite: 85, 120]</span>
           </div>
           <div>
             <span class="font-semibold text-stone-900 block">External Benchmark</span>
-            <span class="text-stone-600 mt-0.5 block">DRAMP (3,497 Unseen Pairs)</span>
+            <span class="text-stone-600 mt-0.5 block">DRAMP (3,497 Unseen Pairs)[cite: 71, 121]</span>
           </div>
           <div>
             <span class="font-semibold text-stone-900 block">Supervision</span>
-            <span class="text-stone-600 mt-0.5 block">Dr. Muhammad Iqbal Hossain</span>
+            <span class="text-stone-600 mt-0.5 block">Dr. Muhammad Iqbal Hossain[cite: 6, 103]</span>
           </div>
         </div>
 
         <div class="flex items-center justify-between pt-1 flex-wrap gap-4">
           <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">ESM-2 Embeddings</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biophysical Fusion</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Species Conditioning</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Uncertainty Estimation</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">ESM-2 Embeddings[cite: 34, 107]</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biophysical Fusion[cite: 34, 114]</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Species Conditioning[cite: 34, 107]</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Uncertainty Estimation[cite: 34, 114]</span>
           </div>
-          <div class="flex items-center gap-3">
-            <button onclick="openModal('thesis-modal')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+          <div class="flex items-center gap-2.5 flex-wrap">
+            <button onclick="openModal('thesis-modal')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
               <i data-feather="file-text" class="w-3.5 h-3.5"></i>
-              <span>Summary</span>
+              <span>Research Summary</span>
             </button>
-            <a href="https://github.com/TBTRatri/Multimodal_AMP_MIC_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-mono font-medium hover:bg-stone-800 transition shadow-sm">
+            <a href="https://github.com/TBTRatri/Multimodal_AMP_MIC_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
               <i data-feather="github" class="w-3.5 h-3.5"></i>
-              <span>Thesis Repository &rarr;</span>
+              <span>Codebase</span>
+            </a>
+            <a href="https://multimodalampmicprediction-ajxojpyszevvlyxxcnjobp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+              <i data-feather="play" class="w-3.5 h-3.5"></i>
+              <span>Live Interactive Demo &rarr;</span>
             </a>
           </div>
         </div>
@@ -302,7 +302,7 @@
 
     <!-- RESEARCH REPOSITORIES & COMPUTATIONAL BIOLOGY -->
     <section id="projects" class="space-y-6">
-      <div class="border-b border-stone-200/90 pb-3">
+      <div class="border-b border-stone-200 pb-3">
         <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Research & Machine Learning Repositories</span>
         <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
           Applied Sequence Models & Computational Genomics
@@ -312,7 +312,7 @@
       <div class="space-y-6">
 
         <!-- Project 1: DNA Autoencoder Storage -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
               <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 font-semibold">
@@ -340,7 +340,7 @@
         </article>
 
         <!-- Project 2: Nucleic Acid Binding Site Prediction -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
               <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200/60 font-semibold">
@@ -368,7 +368,7 @@
         </article>
 
         <!-- Project 3: GEO Gene Expression Profiling & PCA -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
               <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/60 font-semibold">
@@ -401,7 +401,7 @@
 
     <!-- SOFTWARE & SYSTEMS ENGINEERING -->
     <section class="space-y-6">
-      <div class="border-b border-stone-200/90 pb-3">
+      <div class="border-b border-stone-200 pb-3">
         <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Software Architecture</span>
         <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
           Full-Stack, Relational Schemas & Systems
@@ -411,7 +411,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <!-- Hotel Management (3NF Relational DB) -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
               Database Engineering & Systems
@@ -436,7 +436,7 @@
         </article>
 
         <!-- IoT Smart Planter -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
               Embedded Systems & Hardware
@@ -450,13 +450,13 @@
           </div>
           <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-stone-600 pt-2">
             <span class="px-2 py-0.5 rounded bg-stone-100">Arduino Uno</span>
-            <span class="px-2 py-0.5 rounded bg-stone-100">C/C++ Embedded</span>
+            <span class="px-2 py-0.5 rounded bg-stone-100">Embedded C++</span>
             <span class="px-2 py-0.5 rounded bg-stone-100">Hardware Prototyping</span>
           </div>
         </article>
 
         <!-- Travel Booking Web Platform -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
               Full-Stack Application
@@ -476,7 +476,7 @@
         </article>
 
         <!-- Computer Graphics Interactive Simulator -->
-        <article class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
+        <article class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 flex flex-col justify-between">
           <div class="space-y-3">
             <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
               Graphics & Mathematical Modeling
@@ -500,18 +500,18 @@
 
     <!-- ACADEMIC FOUNDATIONS -->
     <section class="space-y-6">
-      <div class="border-b border-stone-200/90 pb-3">
+      <div class="border-b border-stone-200 pb-3">
         <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Academic Foundations</span>
         <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
           Education & Credentials
         </h2>
       </div>
 
-      <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-sm border border-stone-200/90 shadow-sm space-y-6">
+      <div class="p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
           <div>
-            <h3 class="font-serif text-xl font-medium text-stone-900">Brac University</h3>
-            <p class="text-xs text-stone-600 font-mono mt-0.5">Bachelor of Science in Computer Science and Engineering</p>
+            <h3 class="font-serif text-xl font-medium text-stone-900">Brac University[cite: 4]</h3>
+            <p class="text-xs text-stone-600 font-mono mt-0.5">Bachelor of Science in Computer Science and Engineering[cite: 4]</p>
           </div>
           <div class="text-right">
             <span class="text-sm font-serif font-bold text-stone-900 block">CGPA 3.69 / 4.00</span>
@@ -536,22 +536,22 @@
       </div>
     </section>
 
-    <!-- CONTACT BANNER -->
-    <section class="p-10 rounded-3xl bg-stone-900 text-stone-50 text-center space-y-6 shadow-xl">
+    <!-- CONTACT BANNER (Clean White Style Matching Page Theme) -->
+    <section class="p-10 rounded-3xl bg-white border border-stone-200/90 shadow-sm text-center space-y-6">
       <div class="space-y-2">
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal">Let's build something exceptional.</h2>
-        <p class="text-xs sm:text-sm text-stone-400 max-w-lg mx-auto font-sans leading-relaxed">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-stone-900">Let's build something exceptional.</h2>
+        <p class="text-xs sm:text-sm text-stone-600 max-w-lg mx-auto font-sans leading-relaxed">
           Open to software engineering positions, backend development, and computational machine learning research teams.
         </p>
       </div>
 
       <div class="flex flex-wrap justify-center items-center gap-4 pt-2">
-        <button onclick="copyEmail()" class="px-6 py-3 rounded-full bg-accent text-white text-xs font-mono font-semibold hover:bg-emerald-700 transition flex items-center gap-2 shadow-lg">
-          <i data-feather="mail" class="w-4 h-4"></i>
+        <button onclick="copyEmail()" class="px-6 py-3 rounded-full bg-stone-900 text-stone-50 text-xs font-mono font-semibold hover:bg-stone-800 transition flex items-center gap-2 shadow-sm">
+          <i data-feather="mail" class="w-4 h-4 text-emerald-400"></i>
           <span>tahsinbintatowhid@gmail.com</span>
         </button>
-        <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-stone-700 hover:border-stone-400 text-xs font-mono text-stone-300 hover:text-white transition flex items-center gap-2">
-          <i data-feather="linkedin" class="w-4 h-4 text-blue-400"></i>
+        <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-stone-300 hover:border-stone-800 text-xs font-mono text-stone-700 hover:text-stone-950 transition flex items-center gap-2 bg-stone-50 shadow-sm">
+          <i data-feather="linkedin" class="w-4 h-4 text-blue-600"></i>
           <span>LinkedIn</span>
         </a>
       </div>
@@ -563,7 +563,7 @@
     <p>&copy; 2026 Tahsin Binta Towhid · Built with semantic HTML, Tailwind CSS, & Feather Icons</p>
   </footer>
 
-  <!-- MODAL: THESIS SUMMARY -->
+  <!-- MODAL: EXPANDED RESEARCH & THESIS SUMMARY -->
   <div id="thesis-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-2xl w-full p-8 sm:p-10 border border-stone-300 shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto relative">
       <button onclick="closeModal('thesis-modal')" class="absolute top-6 right-6 p-2 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-100 transition">
@@ -572,35 +572,43 @@
 
       <div>
         <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
-          Thesis Defense Summary
+          Research Portfolio &amp; Defense Summary[cite: 6, 102]
         </span>
         <h3 class="font-serif text-2xl font-medium text-stone-900 mt-3">
-          Leveraging Unpaired Data to Mitigate Paired Data Scarcity and Foster Generalizable Multimodal Models
+          Computational Biology &amp; Sequence Modeling
         </h3>
-        <p class="text-xs font-mono text-stone-500 mt-1">B.Sc. in Computer Science and Engineering · Brac University (Defended October 2025)</p>
+        <p class="text-xs font-mono text-stone-500 mt-1">Brac University · Supervised by Dr. Muhammad Iqbal Hossain (Defended Oct 2025)[cite: 4, 6, 103]</p>
       </div>
 
       <div class="space-y-4 text-xs text-stone-600 leading-relaxed font-sans border-t border-stone-100 pt-4">
-        <p>
-          <strong class="text-stone-900">Background &amp; Motivation:</strong> Antimicrobial resistance (AMR) threatens global public health. Existing AI approaches for antimicrobial peptide (AMP) discovery predominantly generate binary classification or ignore synthesizability and pathogen specificity.
-        </p>
-        <p>
-          <strong class="text-stone-900">Architecture &amp; Methodology:</strong> Built a <strong>Biophysical Fusion Ensemble</strong> integrating:
-          <ul class="list-disc pl-5 space-y-1 pt-1 font-mono text-[11px] text-stone-700">
-            <li>Pretrained <strong>ESM-2</strong> protein language model embeddings (320-D).</li>
-            <li>12 normalized physicochemical descriptors (net charge, molecular weight, hydrophobic moment, GRAVY score, Boman index, etc.).</li>
-            <li>Learnable bacterial species embeddings spanning 286 target pathogens.</li>
-            <li>5-member ensemble averaging with variance-based uncertainty quantification.</li>
-          </ul>
-        </p>
-        <p>
-          <strong class="text-stone-900">Results:</strong> Evaluated on a 32,607-record bacteria-only dataset. Achieved a Test MAE of <strong>0.3625</strong> (14.7% improvement over baseline) and a fold error of <strong>2.30×</strong>. Maintained strong generalization on an independent DRAMP benchmark across 3,497 unseen pairs.
-        </p>
+        <!-- Thesis Highlight -->
+        <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200 space-y-1">
+          <span class="font-bold text-stone-900 block font-serif text-sm">1. Flagship Undergraduate Thesis[cite: 4]</span>
+          <p><strong class="text-stone-800">Biophysical Fusion Ensemble for MIC Prediction:</strong> Fused 320-D ESM-2 sequence embeddings, 12 physicochemical descriptors, and bacterial species embeddings across 32,607 records and 286 pathogens[cite: 34, 49, 107]. Achieved 0.3625 Test MAE and validated generalizability on 3,497 DRAMP benchmark pairs[cite: 71, 85, 120, 121].</p>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200 space-y-1">
+          <span class="font-bold text-stone-900 block font-serif text-sm">2. Latent Sequence Autoencoders (DNA Storage)</span>
+          <p>Trained neural autoencoders to compress synthetic biological data payloads while maintaining GC-content balance and minimizing homopolymer runs in latent space for error-free sequence synthesis.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200 space-y-1">
+          <span class="font-bold text-stone-900 block font-serif text-sm">3. Nucleic Acid Binding Site Prediction</span>
+          <p>Engineered a multi-scale 1D CNN with 4-head self-attention and masked BCE loss across 1,634 sequences (481,252 residues), reaching 0.7340 AUC under severe class imbalance (~9.54% binding sites).</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="p-3.5 rounded-xl bg-stone-50 border border-stone-200 space-y-1">
+          <span class="font-bold text-stone-900 block font-serif text-sm">4. High-Dimensional Microarray PCA (NCBI GEO GSE6613)</span>
+          <p>Addressed the p &gt;&gt; n curse of dimensionality over 22,283 probe features and 105 biological samples using GEOparse, zero-variance screening, standard scaling, and PCA variance projection.</p>
+        </div>
       </div>
 
       <div class="pt-2 flex justify-between items-center flex-wrap gap-2">
         <a href="https://github.com/TBTRatri/Multimodal_AMP_MIC_Prediction" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-accent hover:underline flex items-center gap-1">
-          Open Repository &amp; Code &rarr;
+          View Thesis GitHub Repository &rarr;
         </a>
         <button onclick="closeModal('thesis-modal')" class="px-5 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-medium hover:bg-stone-800 transition">
           Close Window
@@ -650,10 +658,8 @@
 
   <!-- SCRIPT LOGIC: Typewriter, Skills Constellation, Clipboard & Modals -->
   <script>
-    // 1. Initialize Feather Icons
     feather.replace();
 
-    // 2. Cycling Typewriter
     const roles = [
       "Software Engineer",
       "CSE Graduate @ Brac University",
@@ -692,7 +698,6 @@
     }
     typeLoop();
 
-    // 3. Technical Arsenal Orbit Data
     const skillCategories = [
       {
         name: "Languages",
@@ -759,7 +764,6 @@
     }
     selectSkillNode(0);
 
-    // 4. Copy Email & Toast Notification
     function copyEmail() {
       const email = "tahsinbintatowhid@gmail.com";
       navigator.clipboard.writeText(email).then(() => {
@@ -773,7 +777,6 @@
       });
     }
 
-    // 5. Modal Logic
     function openModal(id) {
       document.getElementById(id).classList.remove("hidden");
       document.body.classList.add("overflow-hidden");
