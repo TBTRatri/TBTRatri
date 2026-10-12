@@ -97,8 +97,8 @@
 
     /* Modal Backdrop */
     .modal-backdrop {
-      background: rgba(33, 30, 25, 0.6);
-      backdrop-filter: blur(4px);
+      background: rgba(33, 30, 25, 0.65);
+      backdrop-filter: blur(5px);
     }
   </style>
 </head>
@@ -121,10 +121,10 @@
     </div>
 
     <div class="flex items-center gap-3 text-xs font-medium text-stone-600">
-      <!-- Direct Download Resume Link -->
-      <a href="Tahsin_Binta_Towhid_CV.pdf" download="Tahsin_Binta_Towhid_CV.pdf" class="px-4 py-2 rounded-full border border-stone-300 hover:border-stone-800 hover:text-stone-900 transition flex items-center gap-2 bg-stone-100/50 shadow-sm">
-        <i data-feather="download" class="w-3.5 h-3.5 text-accent"></i> Download Résumé
-      </a>
+      <!-- CV Popup Trigger Button -->
+      <button onclick="openModal('cv-modal')" class="px-4 py-2 rounded-full border border-stone-300 hover:border-stone-800 hover:text-stone-900 transition flex items-center gap-2 bg-stone-100/50 shadow-sm">
+        <i data-feather="file-text" class="w-3.5 h-3.5 text-accent"></i> View Résumé
+      </button>
       <button onclick="copyEmail()" class="px-4 py-2 rounded-full bg-stone-900 text-stone-50 hover:bg-stone-800 transition flex items-center gap-1.5 shadow-sm">
         <i data-feather="copy" class="w-3.5 h-3.5"></i> Copy Email
       </button>
@@ -154,14 +154,14 @@
         </p>
 
         <div class="flex flex-wrap items-center gap-3 pt-3">
-          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-stone-900 text-stone-50 text-xs font-semibold hover:bg-stone-800 transition flex items-center gap-2 shadow-sm">
-            View Live Projects & Repositories <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
+          <a href="#research" class="px-5 py-2.5 rounded-xl bg-stone-900 text-stone-50 text-xs font-semibold hover:bg-stone-800 transition flex items-center gap-2 shadow-sm">
+            Research Works <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="#software" class="px-5 py-2.5 rounded-xl border border-stone-300 text-stone-800 hover:border-stone-800 text-xs font-semibold transition flex items-center gap-2 bg-white shadow-sm">
+            Software & Systems <i data-feather="arrow-down" class="w-3.5 h-3.5"></i>
           </a>
           <a href="https://github.com/TBTRatri" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white shadow-sm">
-            <i data-feather="github" class="w-3.5 h-3.5"></i> GitHub Profile
-          </a>
-          <a href="https://linkedin.com/in/tahsinbintatowhid" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 hover:border-stone-800 text-stone-700 hover:text-stone-950 transition text-xs font-medium flex items-center gap-1.5 bg-white shadow-sm">
-            <i data-feather="linkedin" class="w-3.5 h-3.5 text-blue-600"></i> LinkedIn
+            <i data-feather="github" class="w-3.5 h-3.5"></i> GitHub
           </a>
         </div>
       </div>
@@ -237,85 +237,266 @@
       </div>
     </section>
 
-    <!-- FLAGSHIP THESIS SPOTLIGHT -->
-    <section id="thesis" class="space-y-6">
-      <div class="flex items-center justify-between border-b border-stone-200 pb-3">
-        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Flagship Research · Defended & Approved</span>
-        <span class="text-xs font-serif italic text-stone-600">Brac University Thesis</span>
-      </div>
-
-      <div class="p-8 sm:p-10 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6">
-        <div>
-          <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
-            Computational Biophysics & Deep Learning
-          </span>
-          <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-3 leading-snug">
-            Leveraging Unpaired Data to Mitigate Paired Data Scarcity and Foster Generalizable Multimodal Models
-          </h2>
-          <p class="text-sm text-stone-600 mt-3 leading-relaxed">
-            Formulated and implemented a <strong>Biophysical Fusion Ensemble</strong> to predict species-conditioned Minimum Inhibitory Concentrations (MIC) of antimicrobial peptides (AMPs). Fused 320-D ESM-2 contextual protein embeddings with 12 handcrafted physicochemical descriptors and learnable bacterial target embeddings across 286 species and 32,607 activity records.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 py-4 border-y border-stone-100 text-xs">
-          <div>
-            <span class="font-semibold text-stone-900 block">Dataset</span>
-            <span class="text-stone-600 mt-0.5 block">32,607 Records (6,148 Peptides)</span>
-          </div>
-          <div>
-            <span class="font-semibold text-stone-900 block">Internal Error</span>
-            <span class="text-stone-600 mt-0.5 block">0.3625 MAE (Fold Error 2.30×)</span>
-          </div>
-          <div>
-            <span class="font-semibold text-stone-900 block">External Benchmark</span>
-            <span class="text-stone-600 mt-0.5 block">DRAMP (3,497 Unseen Pairs)</span>
-          </div>
-          <div>
-            <span class="font-semibold text-stone-900 block">Supervision</span>
-            <span class="text-stone-600 mt-0.5 block">Dr. Muhammad Iqbal Hossain</span>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-between pt-1 flex-wrap gap-4">
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">ESM-2 Embeddings</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biophysical Fusion</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Species Conditioning</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Uncertainty Estimation</span>
-          </div>
-          <div class="flex items-center gap-2.5 flex-wrap">
-            <button onclick="openModal('thesis-modal')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-              <i data-feather="file-text" class="w-3.5 h-3.5"></i>
-              <span>Research Summary</span>
-            </button>
-            <a href="https://github.com/TBTRatri/Multimodal_AMP_MIC_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-              <i data-feather="github" class="w-3.5 h-3.5"></i>
-              <span>Repository &rarr;</span>
-            </a>
-            <a href="https://multimodalampmicprediction-ajxojpyszevvlyxxcnjobp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-              <i data-feather="play" class="w-3.5 h-3.5"></i>
-              <span>Live Interactive Demo &rarr;</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE REPOSITORIES & ENGINEERING SHOWCASE -->
-    <section id="projects" class="space-y-6">
+    <!-- ========================================== -->
+    <!-- SECTION 1: RESEARCH-BASED PROJECTS         -->
+    <!-- ========================================== -->
+    <section id="research" class="space-y-8">
       <div class="border-b border-stone-200 pb-3 flex items-baseline justify-between">
         <div>
-          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Curated Engineering Portfolio</span>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Pillar I</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
-            Featured Repositories & Deployments
+            Computational Biology & Machine Learning Research
           </h2>
         </div>
-        <span class="text-xs font-mono text-stone-500">Live Demonstrations</span>
+        <span class="text-xs font-mono text-stone-500">Peer-Reviewed & Thesis Implementations</span>
       </div>
 
       <div class="space-y-6">
 
-        <!-- 1. Enterprise Campus Network & VLSM Engine (CLEAN CARD - NO VIDEO UPFRONT) -->
+        <!-- 1. Flagship Undergraduate Thesis -->
+        <article class="p-8 sm:p-10 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-6 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+                Flagship Thesis · Defended & Approved (Oct 2025)
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-3 leading-snug">
+                Multimodal_AMP_MIC_Prediction: Leveraging Unpaired Data to Mitigate Paired Data Scarcity
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <button onclick="openModal('thesis-modal')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="file-text" class="w-3.5 h-3.5"></i> Summary
+              </button>
+              <a href="https://github.com/TBTRatri/Multimodal_AMP_MIC_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://multimodalampmicprediction-ajxojpyszevvlyxxcnjobp.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Formulated and implemented a <strong>Biophysical Fusion Ensemble</strong> to predict species-conditioned Minimum Inhibitory Concentrations (MIC) of antimicrobial peptides (AMPs). Fused 320-D ESM-2 contextual protein embeddings with 12 handcrafted physicochemical descriptors and learnable bacterial target embeddings across 286 species and 32,607 records. Achieved 0.3625 Test MAE and validated generalizability on 3,497 DRAMP benchmark pairs.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-3 border-y border-stone-100 text-xs">
+            <div>
+              <span class="font-semibold text-stone-900 block">Dataset</span>
+              <span class="text-stone-600 mt-0.5 block">32,607 Records (6,148 Peptides)</span>
+            </div>
+            <div>
+              <span class="font-semibold text-stone-900 block">Internal Error</span>
+              <span class="text-stone-600 mt-0.5 block">0.3625 MAE (Fold Error 2.30×)</span>
+            </div>
+            <div>
+              <span class="font-semibold text-stone-900 block">External Benchmark</span>
+              <span class="text-stone-600 mt-0.5 block">DRAMP (3,497 Unseen Pairs)</span>
+            </div>
+            <div>
+              <span class="font-semibold text-stone-900 block">Supervision</span>
+              <span class="text-stone-600 mt-0.5 block">Dr. Muhammad Iqbal Hossain</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">ESM-2 Embeddings</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biophysical Fusion</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Species Conditioning</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Uncertainty Estimation</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
+          </div>
+        </article>
+
+        <!-- 2. DNA Autoencoder Storage -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 font-semibold">
+                Deep Learning · Biosequence Storage
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                DNA_Autoencoder_Storage: Latent Sequence Representations for Biological Data Storage
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/DNA_Autoencoder_Storage" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://dnaautoencoderstorage.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Constructed deep neural autoencoder architectures to encode, compress, and reconstruct synthetic DNA information payloads. Incorporated domain-specific biological synthesis constraints—enforcing GC-content balance and penalizing homopolymer repetitions within latent space optimizations to ensure high-fidelity sequence preservation.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Autoencoders</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Latent Representations</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biological Constraints</span>
+          </div>
+        </article>
+
+        <!-- 3. Nucleic Acid Binding Site Prediction -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200/60 font-semibold">
+                Neural Sequence Modeling · Benchmark
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                Nucleic_Acid_Binding_Prediction: 1D CNN with Attention vs. Autoencoder Baselines
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/Nucleic_Acid_Binding_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://nucleicacidbindingprediction.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Investigated residue-level RNA and DNA binding interface detection across 1,634 benchmark protein sequences (481,252 residues). Implemented a multi-scale 1D CNN integrated with a 4-head Multi-Head Self-Attention layer and masked Binary Cross-Entropy loss to manage variable sequence lengths (up to 1,781 residues), achieving 0.7340 AUC under severe class imbalance (~9.54% binding sites). Evaluated against an undercomplete convolutional autoencoder baseline.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">1D CNN</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Multi-Head Attention</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Class Imbalance</span>
+          </div>
+        </article>
+
+        <!-- 4. GEO Gene Expression Profiling & PCA -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/60 font-semibold">
+                Genomics · Unsupervised Dimensionality Reduction
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                GEO_Gene_Expression_PCA: High-Dimensional Microarray Profiling & PCA (NCBI GEO)
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/GEO_Gene_Expression_PCA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://geo-pca-explorer.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Automated retrieval and parsing of microarray gene expression series (<code class="font-mono text-xs">GSE6613</code>, Platform GPL96) via <code class="font-mono text-xs">GEOparse</code>. Handled the high-dimensional $p \gg n$ regime across 22,283 probe features and 105 samples by implementing zero-variance filtering, $z$-score standardization, and orthogonal Principal Component Analysis (PCA) alongside expression heatmap landscapes.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Python</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">GEOparse</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">PCA</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Scikit-Learn</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Seaborn Heatmaps</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: SOFTWARE & SYSTEMS PROJECTS     -->
+    <!-- ========================================== -->
+    <section id="software" class="space-y-8">
+      <div class="border-b border-stone-200 pb-3 flex items-baseline justify-between">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">Pillar II</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-medium text-stone-900 mt-1">
+            Software, Systems &amp; Engineering Deployments
+          </h2>
+        </div>
+        <span class="text-xs font-mono text-stone-500">Compilers, Networking, IoT & Web</span>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- 1. C-Subset-Semantic-Analyzer-Compiler -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
+                Compiler Engineering · Semantic Analysis
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                C-Subset-Semantic-Analyzer-Compiler: Static Semantics & Symbol Resolution
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/C-Subset-Semantic-Analyzer-Compiler" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Analyzer &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Multi-stage semantic compiler backend enforcing static semantics over a structured subset of C. Evaluates operator-operand type compatibility, prevents variable shadowing inconsistencies across hierarchical scopes, validates function signature returns, and produces formatted Abstract Syntax Trees with detailed error diagnostics.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Semantic Analysis</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Hierarchical ScopeTable</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Type Checking</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">C++ AST Engine</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Streamlit Cloud</span>
+          </div>
+        </article>
+
+        <!-- 2. C-Subset-Compiler-Flex-Bison -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
+                Compiler Front-End · Lex & Yacc
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                C-Subset-Compiler-Flex-Bison: Lexical & Syntactic LALR(1) Parsing Suite
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/C-Subset-Compiler-Flex-Bison" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Parser Testbench &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Lexical analyzer and syntax parser implementation using GNU Flex and Bison. Implements regular expressions for C tokens, an LALR(1) grammar for complex expressions, conditional control flows, and array indexing alongside a dynamic Symbol Table for identifier registration.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Flex (Lex)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bison (LALR Parser)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Symbol Table</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Formal Grammars</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">C / C++</span>
+          </div>
+        </article>
+
+        <!-- 3. Enterprise Campus Network & VLSM Engine -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
@@ -349,7 +530,7 @@
           </div>
         </article>
 
-        <!-- 2. Autonomous Smart Planter IoT Twin -->
+        <!-- 4. Autonomous Smart Planter IoT Twin -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
@@ -382,41 +563,7 @@
           </div>
         </article>
 
-        <!-- 3. C-Subset Compiler Flex Bison -->
-        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-            <div>
-              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
-                Compiler Construction · Formal Languages
-              </span>
-              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
-                C-Subset-Compiler-Flex-Bison: Lexical, Syntactic & Semantic Analysis
-              </h3>
-            </div>
-            <div class="flex items-center gap-2 self-start flex-wrap">
-              <a href="https://github.com/TBTRatri/C-Subset-Compiler-Flex-Bison" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
-              </a>
-              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Compiler &rarr;
-              </a>
-            </div>
-          </div>
-
-          <p class="text-sm text-stone-600 leading-relaxed">
-            Multi-pass compiler front-end for a structured subset of C implemented using Flex (Lex) and Bison (LALR Parser). Implements dynamically scoped symbol resolution across hierarchical ScopeTables, expression type validation, function parameter signature matching, and line-diagnostic syntax/semantic error reporting with an interactive web testbench.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Flex (Lexer)</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bison (LALR Parser)</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Nested ScopeTable</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Type Checking</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">C / C++</span>
-          </div>
-        </article>
-
-        <!-- 4. Conference Site Platform -->
+        <!-- 5. Conference Site Platform -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
@@ -446,106 +593,6 @@
             <span class="px-2.5 py-1 rounded-md bg-stone-100">GitHub Pages</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100">Event Management</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100">UI / UX Systems</span>
-          </div>
-        </article>
-
-        <!-- 5. DNA Autoencoder Storage -->
-        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-            <div>
-              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 font-semibold">
-                Deep Learning · Sequence Storage
-              </span>
-              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
-                DNA_Autoencoder_Storage: Latent Sequence Representations for Biological Data Storage
-              </h3>
-            </div>
-            <div class="flex items-center gap-2 self-start flex-wrap">
-              <a href="https://github.com/TBTRatri/DNA_Autoencoder_Storage" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
-              </a>
-              <a href="https://dnaautoencoderstorage.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
-              </a>
-            </div>
-          </div>
-
-          <p class="text-sm text-stone-600 leading-relaxed">
-            Constructed deep neural autoencoder architectures to encode, compress, and reconstruct synthetic DNA information payloads. Incorporated domain-specific biological synthesis constraints—enforcing GC-content balance and penalizing homopolymer repetitions within latent space optimizations to ensure high-fidelity sequence preservation.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Autoencoders</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Latent Representations</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Biological Constraints</span>
-          </div>
-        </article>
-
-        <!-- 6. Nucleic Acid Binding Site Prediction -->
-        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-            <div>
-              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-800 border border-indigo-200/60 font-semibold">
-                Neural Sequence Modeling · Benchmark
-              </span>
-              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
-                Nucleic_Acid_Binding_Prediction: 1D CNN with Attention vs. Autoencoder Baselines
-              </h3>
-            </div>
-            <div class="flex items-center gap-2 self-start flex-wrap">
-              <a href="https://github.com/TBTRatri/Nucleic_Acid_Binding_Prediction" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
-              </a>
-              <a href="https://nucleicacidbindingprediction.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
-              </a>
-            </div>
-          </div>
-
-          <p class="text-sm text-stone-600 leading-relaxed">
-            Investigated residue-level RNA and DNA binding interface detection across 1,634 benchmark protein sequences (481,252 residues). Implemented a multi-scale 1D CNN integrated with a 4-head Multi-Head Self-Attention layer and masked Binary Cross-Entropy loss to manage variable sequence lengths (up to 1,781 residues), achieving 0.7340 AUC under severe class imbalance (~9.54% binding sites). Evaluated against an undercomplete convolutional autoencoder baseline.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">PyTorch</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">1D CNN</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Multi-Head Attention</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Class Imbalance</span>
-          </div>
-        </article>
-
-        <!-- 7. GEO Gene Expression Profiling & PCA -->
-        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-            <div>
-              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/60 font-semibold">
-                Genomics · Unsupervised Dimensionality Reduction
-              </span>
-              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
-                GEO_Gene_Expression_PCA: High-Dimensional Genomic Expression Profiling & PCA
-              </h3>
-            </div>
-            <div class="flex items-center gap-2 self-start flex-wrap">
-              <a href="https://github.com/TBTRatri/GEO_Gene_Expression_PCA" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
-              </a>
-              <a href="https://geo-pca-explorer.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Demo &rarr;
-              </a>
-            </div>
-          </div>
-
-          <p class="text-sm text-stone-600 leading-relaxed">
-            Automated retrieval and parsing of microarray gene expression series (<code class="font-mono text-xs">GSE6613</code>, Platform GPL96) via <code class="font-mono text-xs">GEOparse</code>. Handled the high-dimensional $p \gg n$ regime across 22,283 probe features and 105 samples by implementing zero-variance filtering, $z$-score standardization, and orthogonal Principal Component Analysis (PCA) alongside expression heatmap landscapes.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Python</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">GEOparse</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">PCA</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Scikit-Learn</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Seaborn Heatmaps</span>
           </div>
         </article>
 
@@ -616,6 +663,42 @@
   <footer class="max-w-4xl mx-auto px-6 py-12 border-t border-stone-200/80 text-center text-xs font-mono text-stone-500">
     <p>&copy; 2026 Tahsin Binta Towhid · Built with semantic HTML, Tailwind CSS, & Feather Icons</p>
   </footer>
+
+  <!-- ========================================== -->
+  <!-- MODAL: INTERACTIVE RÉSUMÉ PREVIEW & DOWNLOAD -->
+  <!-- ========================================== -->
+  <div id="cv-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-4xl w-full h-[90vh] p-6 sm:p-8 border border-stone-300 shadow-2xl flex flex-col space-y-4 relative">
+      <div class="flex items-center justify-between border-b border-stone-200 pb-3">
+        <div>
+          <span class="text-xs font-mono px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+            Curriculum Vitae
+          </span>
+          <h3 class="font-serif text-xl sm:text-2xl font-medium text-stone-900 mt-1">
+            Tahsin Binta Towhid — Résumé
+          </h3>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="Tahsin_Binta_Towhid_CV.pdf" download="Tahsin_Binta_Towhid_CV.pdf" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-mono hover:bg-stone-800 transition shadow-sm">
+            <i data-feather="download" class="w-3.5 h-3.5 text-emerald-400"></i> Download PDF
+          </a>
+          <button onclick="closeModal('cv-modal')" class="p-2 rounded-full text-stone-500 hover:text-stone-900 hover:bg-stone-100 transition">
+            <i data-feather="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer -->
+      <div class="flex-grow w-full rounded-2xl overflow-hidden border border-stone-200 bg-stone-100">
+        <iframe src="Tahsin_Binta_Towhid_CV.pdf" class="w-full h-full" frameborder="0">
+          <p class="p-6 text-xs text-stone-600 font-mono">
+            Your browser does not support inline PDF viewing. 
+            <a href="Tahsin_Binta_Towhid_CV.pdf" download="Tahsin_Binta_Towhid_CV.pdf" class="text-accent underline font-bold">Click here to download the PDF</a>.
+          </p>
+        </iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- MODAL: EXPANDED RESEARCH & THESIS SUMMARY -->
   <div id="thesis-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
