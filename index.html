@@ -150,7 +150,7 @@
         </div>
 
         <p class="text-base sm:text-lg text-stone-600 leading-relaxed font-normal pt-1">
-          Computer Science and Engineering (CSE) graduate from <strong class="text-stone-900 font-semibold">Brac University</strong> (CGPA 3.69 / 4.00). Focused on robust systems engineering, compiler parsing pipelines, intermediate code generation, enterprise networking architectures, and neural sequence modeling in computational biophysics.
+          Computer Science and Engineering (CSE) graduate from <strong class="text-stone-900 font-semibold">Brac University</strong> (CGPA 3.69 / 4.00). Focused on robust systems engineering, compiler parsing pipelines, enterprise networking architectures, and neural sequence modeling in computational biophysics.
         </p>
 
         <div class="flex flex-wrap items-center gap-3 pt-3">
@@ -189,8 +189,8 @@
         <span class="text-xs text-stone-600 mt-1 block">Activity Records Curated</span>
       </div>
       <div>
-        <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">Flex &amp; Bison</span>
-        <span class="text-xs text-stone-600 mt-1 block">LALR Parsers, AST &amp; TAC</span>
+        <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">OSPF / VLSM</span>
+        <span class="text-xs text-stone-600 mt-1 block">Campus Enterprise Networks</span>
       </div>
       <div>
         <span class="block font-serif text-3xl sm:text-4xl font-medium text-stone-900">ESM-2 / DL</span>
@@ -224,7 +224,7 @@
           <button onclick="selectSkillNode(1)" onmouseenter="selectSkillNode(1)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 85%;">Databases & Net</button>
           <button onclick="selectSkillNode(2)" onmouseenter="selectSkillNode(2)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 85%;">AI & Research</button>
           <button onclick="selectSkillNode(3)" onmouseenter="selectSkillNode(3)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 85%; left: 50%;">IoT & Compilers</button>
-          <button onclick="selectSkillNode(4)" onmouseenter="selectSkillNode(4)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 15%;">QA & Systems</button>
+          <button onclick="selectSkillNode(4)" onmouseenter="selectSkillNode(4)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 68%; left: 15%;">QA & Web</button>
           <button onclick="selectSkillNode(5)" onmouseenter="selectSkillNode(5)" class="orbit-node px-3.5 py-1.5 rounded-full text-xs font-medium border border-stone-300 bg-white shadow-sm text-stone-700" style="top: 32%; left: 15%;">Graphics & Tools</button>
         </div>
 
@@ -397,7 +397,7 @@
           </div>
 
           <p class="text-sm text-stone-600 leading-relaxed">
-            Automated retrieval and parsing of microarray gene expression series (<code class="font-mono text-xs">GSE6613</code>, Platform GPL96) via <code class="font-mono text-xs">GEOparse</code>. Handled the high-dimensional $p \gg n$ regime across 22,283 probe features and 105 samples by implementing zero-variance filtering, $z$-score standardization, and orthogonal Principal Component Analysis (PCA) alongside expression heatmap landscapes.
+            Automated retrieval and parsing of microarray gene expression series (<code class="font-mono text-xs">GSE6613</code>, Platform GPL96) via <code class="font-mono text-xs">GEOparse</code>. Handled the high-dimensional pn regime across 22,283 probe features and 105 samples by implementing zero-variance filtering, z-score standardization, and orthogonal Principal Component Analysis (PCA) alongside expression heatmap landscapes.
           </p>
 
           <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
@@ -423,52 +423,17 @@
             Software, Systems &amp; Engineering Deployments
           </h2>
         </div>
-        <span class="text-xs font-mono text-stone-500">Compilers, Networks &amp; IoT</span>
+        <span class="text-xs font-mono text-stone-500">Compilers, Networking, IoT &amp; Web</span>
       </div>
 
       <div class="space-y-6">
 
-        <!-- 1. C-Subset-Semantic-Analyzer (Lab 03) -->
+        <!-- 1. C-Subset-Intermediate-Code-Generator (NEW) -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
               <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
-                Compiler Engineering · Semantic Analysis (Lab 03)
-              </span>
-              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
-                C-Subset-Semantic-Analyzer: Hierarchical ScopeTable &amp; Static Semantics
-              </h3>
-            </div>
-            <div class="flex items-center gap-2 self-start flex-wrap">
-              <a href="https://github.com/TBTRatri/C-Subset-Semantic-Analyzer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
-                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
-              </a>
-              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
-                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Analyzer &rarr;
-              </a>
-            </div>
-          </div>
-
-          <p class="text-sm text-stone-600 leading-relaxed">
-            Multi-stage semantic compiler stage enforcing static semantics over a structured subset of C[cite: 5]. Implements GNU Flex lexing, Bison LALR(1) parsing, nested hash-based ScopeTable symbol resolution, operator-operand type validation, and line-diagnostic compile error reporting.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">GNU Flex</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bison Parser</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Hierarchical ScopeTable</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Type Checking</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">C++ AST Engine</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100">Streamlit Cloud</span>
-          </div>
-        </article>
-
-        <!-- 2. C-Subset-Intermediate-Code-Generator (Lab 04) -->
-        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-            <div>
-              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
-                Compiler Back-End · IR &amp; AST (Lab 04)
+                Compiler Back-End · IR &amp; AST Construction
               </span>
               <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
                 C-Subset-Intermediate-Code-Generator: TAC Emission &amp; Abstract Syntax Tree
@@ -498,7 +463,110 @@
           </div>
         </article>
 
-        <!-- 3. Enterprise Campus Network & VLSM Engine -->
+        <!-- 2. C-Subset-Semantic-Analyzer (NEW) -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
+                Compiler Engineering · Semantic Analysis
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                C-Subset-Semantic-Analyzer: Hierarchical ScopeTable &amp; Static Semantics
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/C-Subset-Semantic-Analyzer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Analyzer &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Multi-stage semantic compiler stage enforcing static semantics over a structured subset of C[cite: 5]. Implements GNU Flex lexing, Bison LALR(1) parsing, nested hash-based ScopeTable symbol resolution, operator-operand type validation, and line-diagnostic compile error reporting.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">GNU Flex</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bison Parser</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Hierarchical ScopeTable</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Type Checking</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">C++ AST Engine</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Streamlit Cloud</span>
+          </div>
+        </article>
+
+        <!-- 3. C-Subset-Semantic-Analyzer-Compiler (Original) -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
+                Compiler Engineering · Semantic Analysis
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                C-Subset-Semantic-Analyzer-Compiler: Static Semantics & Symbol Resolution
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/C-Subset-Semantic-Analyzer-Compiler" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Analyzer &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Multi-stage semantic compiler backend enforcing static semantics over a structured subset of C. Evaluates operator-operand type compatibility, prevents variable shadowing inconsistencies across hierarchical scopes, validates function signature returns, and produces formatted Abstract Syntax Trees with detailed error diagnostics.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Semantic Analysis</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Hierarchical ScopeTable</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Type Checking</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">C++ AST Engine</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Streamlit Cloud</span>
+          </div>
+        </article>
+
+        <!-- 4. C-Subset-Compiler-Flex-Bison (Original) -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-800 border border-purple-200 font-semibold">
+                Compiler Front-End · Lex & Yacc
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                C-Subset-Compiler-Flex-Bison: Lexical & Syntactic LALR(1) Parsing Suite
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/C-Subset-Compiler-Flex-Bison" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://c-subset-semantic-analyzer.streamlit.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="play" class="w-3.5 h-3.5"></i> Live Parser Testbench &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Lexical analyzer and syntax parser implementation using GNU Flex and Bison. Implements regular expressions for C tokens, an LALR(1) grammar for complex expressions, conditional control flows, and array indexing alongside a dynamic Symbol Table for identifier registration.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Flex (Lex)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Bison (LALR Parser)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Symbol Table</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Formal Grammars</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">C / C++</span>
+          </div>
+        </article>
+
+        <!-- 5. Enterprise Campus Network & VLSM Engine (Original) -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
@@ -532,7 +600,7 @@
           </div>
         </article>
 
-        <!-- 4. Autonomous Smart Planter IoT Twin -->
+        <!-- 6. Autonomous Smart Planter IoT Twin (Original) -->
         <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
           <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
@@ -562,6 +630,39 @@
             <span class="px-2.5 py-1 rounded-md bg-stone-100">Embedded C++</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100">Closed-Loop Control</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100">Digital Twin Telemetry</span>
+          </div>
+        </article>
+
+        <!-- 7. Conference Site Platform (Original) -->
+        <article class="p-8 sm:p-9 rounded-3xl bg-white border border-stone-200/90 shadow-sm space-y-4 hover:border-stone-400 transition">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200 font-semibold">
+                Web Systems · Event Architecture
+              </span>
+              <h3 class="font-serif text-2xl font-medium text-stone-900 mt-2">
+                conference-site: Annual Conference Digital Platform & Administrative Portal
+              </h3>
+            </div>
+            <div class="flex items-center gap-2 self-start flex-wrap">
+              <a href="https://github.com/TBTRatri/conference-site" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-stone-300 text-xs font-mono text-stone-800 hover:border-stone-900 transition bg-white shadow-sm">
+                <i data-feather="github" class="w-3.5 h-3.5"></i> Repository &rarr;
+              </a>
+              <a href="https://tbtratri.github.io/conference-site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-accent text-white text-xs font-mono font-medium hover:bg-teal-800 transition shadow-sm">
+                <i data-feather="external-link" class="w-3.5 h-3.5"></i> Live Portal &rarr;
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-stone-600 leading-relaxed">
+            Production-grade digital web portal engineered for major academic and organizational annual conferences. Features responsive event scheduling, delegate registration workflows, speaker session itineraries, sponsorship proposal documentation, and real-time announcements.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-stone-600">
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Responsive Web Architecture</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">GitHub Pages</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">Event Management</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100">UI / UX Systems</span>
           </div>
         </article>
 
@@ -595,7 +696,7 @@
           </span>
           <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-700">
             <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Data Structures & Algorithms</span>
-            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Compiler Design (Flex, Bison & TAC)</span>
+            <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Compiler Design (Flex & Bison)</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Database Systems (3NF / SQL)</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Machine Learning & Neural Networks</span>
             <span class="px-2.5 py-1 rounded-md bg-stone-100 border border-stone-200">Computer Networks & Sockets</span>
@@ -726,7 +827,7 @@
     const roles = [
       "Software Engineer",
       "CSE Graduate @ Brac University",
-      "Compiler & Systems Developer",
+      "Network & Systems Developer",
       "Machine Learning Researcher"
     ];
     let roleIdx = 0;
@@ -787,9 +888,9 @@
         skills: ["Flex (Lex)", "Bison (Yacc)", "Three-Address Code", "AST Trees", "Arduino Uno", "Embedded C++", "Streamlit"]
       },
       {
-        name: "QA & Systems",
-        count: "Testing & Architecture",
-        narrative: "Formal validation, compiler testing, test case formulations, and web systems.",
+        name: "QA & Web",
+        count: "Testing & Portals",
+        narrative: "Event management portals, test case formulations, and web architecture.",
         skills: ["Software Quality Assurance (SQA)", "Postman", "Responsive Web", "REST APIs", "Git / GitHub"]
       },
       {
